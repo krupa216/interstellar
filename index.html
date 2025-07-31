@@ -1,0 +1,243 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interstellar Diaries</title>
+  <link rel="icon" href="logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-image: url('https://marketplace.canva.com/EAFA2GGq9hI/1/0/1600w/canva-purple-white-gradient-event-video-background-_EBve7ZkLrs.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: #ece7ed;
+    }
+
+    .navbar-brand img {
+      height: 100px;
+    }
+
+    .carousel img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .gallery-img {
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.4s;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+
+    .quote-box, .history-box, .apod-box {
+      background: rgba(174, 127, 200, 0.415);
+      backdrop-filter: blur(6px);
+      border-radius: 20px;
+      box-shadow: 0 0 15px #df65d74d;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-brand img {
+        
+        height: 60px;
+      }
+
+      .display-3 {
+        font-size: 2rem;
+      }
+
+      .carousel img {
+        height: 200px;
+      }
+
+      #apod-video {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container"style="background-color: rgb(227, 164, 232);" >
+      <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#discoveries">Discoveries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="container py-5">
+    <h3 class="display-3 fw-bold fst-italic text-center">Welcome to <b>Interstellar Diaries</b></h3>
+    <p class="text-center fs-4">A platform dedicated to inspiring curiosity about the cosmos through immersive exploration and visuals.</p>
+    <div class="text-center">
+      <a href="#Begin" class="btn btn-primary m-2">Begin</a>
+      <a href="#Readmore" class="btn btn-secondary m-2">Read More</a>
+    </div>
+  </section>
+
+  <!-- Begin -->
+  <section id="Begin" class="container py-4">
+    <h2 class="fs-3 text-center">Inspiring curiosity through immersive storytelling, historical exploration, and breathtaking visuals.</h2>
+  </section>
+
+  <!-- Diaries -->
+  <section id="diaries" class="container py-4 bg-light text-dark rounded">
+    <h1>🛰️ Starship Logbooks</h1>
+    <p><b>Stardate:</b> 3045.6<br>
+      <b>Location:</b> NGC-4231, Sector 9<br>
+      <b>Event:</b> Encountered unknown alien vessel.<br>
+      <b>Status:</b> AI stable, crew anxious but alert.</p>
+  </section>
+
+  <!-- Discoveries -->
+  <section id="discoveries" class="container py-4">
+    <h1>🔭 Discoveries & Space Knowledge</h1>
+    <ul>
+      <li><b>Exoplanets:</b> Kepler-452b — Earth-like planet, potential future home.</li>
+      <li><b>Black Holes:</b> Messier 87 holds a supermassive mystery.</li>
+      <li><b>Galaxies:</b> Andromeda-Milky Way collision in 4 billion years.</li>
+      <li><b>Space Tech:</b> Warp drives — theoretical propulsion model.</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="container py-5">
+    <h1 class="text-center mb-4">🌌 Visual Gallery</h1>
+    <p class="text-center"><b>Categories:</b> Planetary Systems | Ships | Aliens | Nebulas</p>
+    <div class="row g-4 mt-4">
+      <div class="col-6 col-md-4 col-lg-3"><img src="https://media.istockphoto.com/id/481229372/photo/spiral-galaxy-illustration-of-milky-way.jpg?s=612x612&w=0&k=20&c=O-OKRJWM_XhGv48z6OhOj_tKBwEaDsvhYKguEN1yuJM=" class="gallery-img" alt="Nebula 1"></div>
+      <div class="col-6 col-md-4 col-lg-3"><img src="https://static.vecteezy.com/system/resources/previews/011/215/319/non_2x/planet-earth-with-sunrise-in-space-photo.jpg" class="gallery-img" alt="Galaxy 2"></div>
+      <div class="col-6 col-md-4 col-lg-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2K0JByPtoPP-iSUJtHkoYO-5lVIcxmkXqew&s" class="gallery-img" alt="Planet 3"></div>
+      <div class="col-6 col-md-4 col-lg-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtg51egmjl_-c0b0XhZanpP4Bubp4tgpInA&s" class="gallery-img" alt="Alien 4"></div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline" class="container py-4">
+    <h1>🕒 Mission Timeline</h1>
+    <ul id="timeline-list" style="padding-left: 20px;"></ul>
+  </section>
+
+  <!-- Cosmic Dashboard -->
+  <section id="cosmic-dashboard" class="container py-5">
+    <h1 class="text-center mb-4">🌠 Cosmic Dashboard</h1>
+
+    <div class="quote-box">
+      <h3>✨ Space Quote</h3>
+      <p id="quote">Click the button to reveal a cosmic quote 🌌</p>
+      <button onclick="getQuote()" class="btn btn-info">Launch Quote 🚀</button>
+    </div>
+
+    <div class="history-box">
+      <h3>📜 Today in Space History</h3>
+      <p id="history">Loading today's space event...</p>
+    </div>
+
+    <div class="apod-box">
+      <h3>📷 NASA Image of the Day</h3>
+      <p id="apod-title"></p>
+      <img id="apod-img" class="img-fluid rounded my-3" style="display: none; height: 400px; width: 300px;" />
+      <iframe id="apod-video" frameborder="0" allowfullscreen class="w-100 my-3" style="height: 200px; display: none;"></iframe>
+      <p id="apod-desc"></p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-dark text-light text-center p-4">
+    <h3>Have a Question?</h3>
+    <p>West KK Nagar, Chennai - 600078</p>
+    <p>📞 +91 8428487316 | 📧 diaries@gmail.com</p>
+    <p>&copy; 2025 All rights reserved</p>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    const spaceQuotes = [
+      "“The cosmos is within us. We are made of star-stuff.” – Carl Sagan",
+      "“One small step for man, one giant leap for mankind.” – Neil Armstrong",
+      "“We are in the universe, and the universe is in us.” – Neil deGrasse Tyson",
+      "“To confine our attention to terrestrial matters would be to limit the human spirit.” – Stephen Hawking",
+      "“Across the sea of space, the stars are other suns.” – Carl Sagan"
+    ];
+    function getQuote() {
+      document.getElementById("quote").innerText = spaceQuotes[Math.floor(Math.random() * spaceQuotes.length)];
+    }
+
+    async function getSpaceHistory() {
+      const today = new Date();
+      const month = today.toLocaleString('default', { month: 'long' });
+      const day = today.getDate();
+      const searchTerm = `${month}_${day}`;
+      const apiUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${searchTerm}`;
+      try {
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+        document.getElementById("history").innerText = data.extract || "No space event found today.";
+      } catch {
+        document.getElementById("history").innerText = "Error loading space history.";
+      }
+    }
+
+    async function getAPOD() {
+      const res = await fetch(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`);
+      const data = await res.json();
+      document.getElementById("apod-title").innerText = data.title;
+      document.getElementById("apod-desc").innerText = data.explanation;
+      if (data.media_type === "image") {
+        document.getElementById("apod-img").src = data.url;
+        document.getElementById("apod-img").style.display = "block";
+        document.getElementById("apod-video").style.display = "none";
+      } else {
+        document.getElementById("apod-video").src = data.url;
+        document.getElementById("apod-video").style.display = "block";
+        document.getElementById("apod-img").style.display = "none";
+      }
+    }
+
+    const timelineData = [
+      { year: "2032", event: "First contact with Zenthari species" },
+      { year: "2040", event: "Warp technology prototype successful" },
+      { year: "2045", event: "Mars Colony Alpha established" },
+      { year: "2050", event: "Galactic Federation charter signed" },
+      { year: "2060", event: "First interstellar human mission to Proxima b" }
+    ];
+    const timelineList = document.getElementById("timeline-list");
+    timelineData.forEach(item => {
+      const li = document.createElement("li");
+      li.innerHTML = `<b>${item.year}:</b> ${item.event}`;
+      li.style.marginBottom = "10px";
+      li.onmouseover = () => li.style.transform = "scale(1.03)";
+      li.onmouseout = () => li.style.transform = "scale(1)";
+      timelineList.appendChild(li);
+    });
+
+    getSpaceHistory();
+    getAPOD();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
